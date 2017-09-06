@@ -20,9 +20,11 @@
             <li><a href="#">Page 1-3</a></li>
           </ul> -->
         </li>
-        <li><a routerLink="/pizzas">Purchase ticket</a></li>
+        <li><a routerLink="/login">Purchase ticket</a></li>
         <li><a routerLink = "/pizzas/makePizza">Special offers</a></li>
-        <li><a *ngIf="auth.isAdmin()" routerLink="/orders">Orders</a></li>
+        
+        <li class="right"><a routerLink="/login">log in</a></li>
+        <li class="right"><a routerLink="/register">register</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a *ngIf="!auth.isLoggedIn()" routerLink="/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
