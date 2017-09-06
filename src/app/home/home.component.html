@@ -1,0 +1,24 @@
+<h1>
+    {{name}} works!
+</h1>
+
+<button (click)="onClick()">Click</button>
+<h1></h1>
+
+<h2>Choose departure and arrival airport</h2>
+
+<form (submit)='addDeparture(departure.value)'>
+    <div>
+        <label for="departure">From:</label>
+        <input type="text" #departure>
+        <p>{{from}}</p>
+    </div>
+</form>
+
+<form (submit)='addArrival(arrival.value)'>
+    <div>
+        <label for="arrival">To:</label>
+        <input type="text" #arrival>
+        <p>{{to}}</p>
+    </div>
+</form>
