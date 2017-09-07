@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,7 +26,7 @@ import { FirebaseModule } from './firebase/firebase.module';
   imports: [
     BrowserModule,
     HttpModule,
-    UsersModule,
+    AuthModule,
     AppRoutingModule,
     SharedModule,
     NgbModule.forRoot(),

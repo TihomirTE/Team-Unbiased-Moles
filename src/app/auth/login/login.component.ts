@@ -1,6 +1,8 @@
 import { Router } from '@angular/router';
 // import { AuthService } from './../../services/auth/auth.service';
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from './../auth.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,10 +10,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  [x: string]: any;
+  email: string;
   constructor(/*private authService: AuthService,*/ private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onSignIn(form: NgForm) {
+    this.email = form.value.email;
+    const password = form.value.password;
+    this.AuthService.signInWithEmailAndPassword(this.email, password).then(userInfo => {
+      console.log(userInfo);
+    }).catch((error: any) => {
+      // Handle Errors here.
+      if (error) {
+        console.log(error);
+      }
+      console.log(error);
+    });
   }
 
   loginUser(user) {
