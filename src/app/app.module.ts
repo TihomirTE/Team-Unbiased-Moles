@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { CalendarComponent } from './buy-ticket/calendar/calendar.component';
 import { AboutComponent } from './about/about.component';
 import { BuyTicketModule } from './buy-ticket/buy-ticket.module';
+import { FirebaseModule } from './firebase/firebase.module';
 
 
 
@@ -30,7 +31,8 @@ import { BuyTicketModule } from './buy-ticket/buy-ticket.module';
     SharedModule,
     NgbModule.forRoot(),
     FormsModule,
-    BuyTicketModule
+    BuyTicketModule,
+    FirebaseModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
