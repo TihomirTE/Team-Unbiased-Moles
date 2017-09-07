@@ -1,13 +1,27 @@
-<p>Choose departure data</p>
+<!-- <p>Choose departure data</p>
 
-<ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+<ngb-datepicker (navigate)="date = $event.next"></ngb-datepicker>
 
 <hr/>
 
 <button class="btn btn-sm btn-outline-primary" (click)="selectToday()">Select Today</button>
-<button class="btn btn-sm btn-outline-primary" (click)="dp.navigateTo()">Next month</button>
+<button class="btn btn-sm btn-outline-primary" (click)="navigateTo()">Next month</button>
 
 <hr/>
 
 <pre>Month: {{ date.month }}.{{ date.year }}</pre>
+<pre>Model: {{ model | json }}</pre> -->
+
+<form class="form-inline">
+    <div class="form-group">
+        <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+            <button class="input-group-addon" (click)="d.toggle()" type="button">
+          <img src="./../../../assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" type="image/svg+xml"/>
+        </button>
+        </div>
+    </div>
+</form>
+
+<hr/>
 <pre>Model: {{ model | json }}</pre>

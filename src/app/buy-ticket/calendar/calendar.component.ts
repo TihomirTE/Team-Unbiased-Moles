@@ -19,6 +19,8 @@ export class CalendarComponent implements OnInit {
     this.model = {year: now.getFullYear(), month: now.getMonth() + 1, day: now.getDate()};
   }
 
+  navigateTo() {}
+
   ngOnInit() {
   }
 
