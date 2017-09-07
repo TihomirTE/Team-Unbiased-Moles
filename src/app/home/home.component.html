@@ -1,24 +1,130 @@
-<h1>
-    {{name}} works!
-</h1>
+<!DOCTYPE html>
+<html>
 
-<button (click)="onClick()">Click</button>
-<h1></h1>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-<h2>Choose departure and arrival airport</h2>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-<form (submit)='addDeparture(departure.value)'>
-    <div>
-        <label for="departure">From:</label>
-        <input type="text" #departure>
-        <p>{{from}}</p>
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Welcome to Unbiased-Moles Air Website</b></h1>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/woods.jpg"  style="width:100%">
+    <div class="w3-container">
+      <h3><b>About us</b></h3>
     </div>
-</form>
 
-<form (submit)='addArrival(arrival.value)'>
-    <div>
-        <label for="arrival">To:</label>
-        <input type="text" #arrival>
-        <p>{{to}}</p>
+    <div class="w3-container">
+      <p>We are a leading company for buying flight tickets. We work with the best companies all over the world.
+        We offer the cheapest tickets. Vraca wont be the same again!
+      </p>
+      <div class="w3-row">
+        
+        
+      </div>
     </div>
-</form>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/bridge.jpg"  style="width:100%">
+    <div class="w3-container">
+      <h3><b>What you recieve by traveling with us?</b></h3>
+      
+    </div>
+
+    <div class="w3-container">
+      <p>Best prices</p>
+      <p>Comfort</p>
+      <p>No delays</p>
+      <p>Easy to use website</p>
+      <p>Free flight assurance</p>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+ 
+  
+  <!-- Posts -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular destinations</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="http://q7-rus.ru/photo/1/bashnya_goroda_parizh_308x192.jpg"  class="w3-left w3-margin-right" style="width:150px">
+        <br>
+      </li>
+      <li class="w3-padding-16">
+        <img src="https://interngrouppro-theinterngroup.netdna-ssl.com/wp-content/uploads/2015/09/mobile_header_nyc.jpg"  class="w3-left w3-margin-right" style="width:150px">
+        <br>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="https://static1.squarespace.com/static/55267189e4b0e7fef53c1d86/t/58f3a541e58c624079a02eb4/1488384424474/04649vx.jpg_6.jpg?format=1500w"  class="w3-left w3-margin-right" style="width:150px">
+        <br>
+         <br>
+        <br>
+         <br>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Berlin_Brandenburger_Tor_Abend.jpg/300px-Berlin_Brandenburger_Tor_Abend.jpg"  class="w3-left w3-margin-right" style="width:150px">
+        
+        <br>
+      </li> 
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="http://www.australia.com/content/australia/en_us/places/sydney/_jcr_content/image.adapt.985.HIGH.jpg"  class="w3-left w3-margin-right" style="width:150px" style="height:85px">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Australia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bulgaria</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Germany</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">America</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Great Britain</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">China</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Russia</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Italy</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Japan</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+</body>
+</html>
