@@ -12,12 +12,12 @@ import { NgForm } from '@angular/forms';
 export class LoginComponent implements OnInit {
   [x: string]: any;
   email: string;
-  constructor(/*private authService: AuthService,*/ private router: Router) { }
+  constructor(private AuthService: AuthService) { }
 
   ngOnInit() {
   }
 
-  onSignIn(form: NgForm) {
+  loginUser(form: NgForm) {
     this.email = form.value.email;
     const password = form.value.password;
     this.AuthService.signInWithEmailAndPassword(this.email, password).then(userInfo => {
@@ -27,11 +27,14 @@ export class LoginComponent implements OnInit {
       if (error) {
         console.log(error);
       }
-      console.log(error);
     });
   }
 
-  loginUser(user) {
+  logoutUser() {
+    this.AuthService.logOut();
+  }
+
+  // loginUser(user) {
    /* return this.authService.loginUser(user)
       .subscribe(
       (data) => {
@@ -42,4 +45,4 @@ export class LoginComponent implements OnInit {
       );*/
   }
 
-}
+// }

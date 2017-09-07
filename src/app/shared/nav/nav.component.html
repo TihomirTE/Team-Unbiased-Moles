@@ -15,7 +15,13 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <div class="btn-toolbar">
-                <a href="/login" class="btn btn-success" role="button">Login in</a>
+                <div *ngIf="!isLoggedIn()">
+                    <a href="/login" class="btn btn-success" role="button">Login in</a>
+                </div>
+                <div *ngIf="isLoggedIn()">
+                    <button type="button" (click)="logout()" class="btn btn-success">Log out</button>
+                </div>
+
                 <div class="col-md-1"></div>
                 <a href="/register" class="btn btn-primary" role="button">Sign up</a>
             </div>

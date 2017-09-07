@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from './../../auth/auth.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,13 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth: AuthService) { }
 
   ngOnInit() {
   }
 
   logout() {
-    
+    console.log('clicked');
+    this.auth.logOut();
+  }
+
+  isLoggedIn() {
+    return this.auth.isLoggedIn();
+  }
+
+  click() {
+    console.log('clicked');
   }
 
 }

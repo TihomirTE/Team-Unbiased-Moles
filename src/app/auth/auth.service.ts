@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthService {
+  private currentUser: firebase.User = null;
   constructor(private AngularFireAuthent: AngularFireAuth, private Router: Router) { }
 
   createUserWithEmailAndPassword(email: string, password: string): firebase.Promise<any> {
@@ -22,17 +23,25 @@ export class AuthService {
     });
   }
 
-  currentUser() {
-    return this.AngularFireAuthent.auth.currentUser;
-  }
+  // currentUser() {
+  //   return this.AngularFireAuthent.auth.currentUser;
+  // }
 
-  get currentUserObservable(): Observable<firebase.User> {
-    return this.AngularFireAuthent.authState;
-  }
+  // get currentUserObservable(): Observable<firebase.User> {
+  //   return this.AngularFireAuthent.authState;
+  // }
 
-  logOut(): void {
+  logOut() {
     this.AngularFireAuthent.auth.signOut();
     this.Router.navigate(['/']);
   }
+
+  isLoggedIn(): boolean {
+    if (this.currentUser == null) {
+      return false;
+    }
+    return true;
+  }
+
 
 }
