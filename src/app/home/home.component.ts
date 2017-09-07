@@ -1,8 +1,10 @@
 import { DataService } from './../services/data.service';
 import { Component, OnInit } from '@angular/core';
 
+const now = new Date();
+
 @Component({
-  selector: 'app-home',
+  selector: 'app-datepicker',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -10,8 +12,7 @@ export class HomeComponent implements OnInit {
   name: string;
   from: string;  to: string;
 
-  constructor(private dataService: DataService) { }
-
+  constructor(private dataService: DataService) {}
   ngOnInit() {
     this.name = 'Home';
   }
@@ -31,5 +32,4 @@ export class HomeComponent implements OnInit {
     this.to = 'Arrival airport: ' + airport;
     return false;
   }
-
 }
