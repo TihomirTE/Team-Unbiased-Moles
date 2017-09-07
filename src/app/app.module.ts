@@ -11,6 +11,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { CalendarComponent } from './buy-ticket/calendar/calendar.component';
 import { AboutComponent } from './about/about.component';
+import { BuyTicketModule } from './buy-ticket/buy-ticket.module';
 
 
 
@@ -29,6 +30,7 @@ import { AboutComponent } from './about/about.component';
     SharedModule,
     NgbModule.forRoot(),
     FormsModule,
+    BuyTicketModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CalendarComponent } from './buy-ticket/calendar/calendar.component';
+
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
