@@ -2,29 +2,29 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-    <a class="navbar-brand" href="#">Home</a>
+    <a class="navbar-brand" routerLink="#">Home</a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="/buyTicket">Buy ticket</a>
+                <a class="nav-link" routerLink="/buyTicket">Buy ticket</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" routerLink="/about">About</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <ul *ngIf="!isLoggedIn()" class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/login" class="btn btn-success">Login in</a>
+                    <a routerLink="/login" class="btn btn-success">Login in</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/register" class="btn btn-primary">Sign up</a>
+                    <a routerLink="/register" class="btn btn-primary">Sign up</a>
                 </li>
             </ul>
             <ul *ngIf="isLoggedIn()" class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/user" class="btn btn-secondary">{{loginUser()}}</a>
+                    <a routerLink="/user" class="btn btn-secondary">{{loginUser()}}</a>
                 </li>
                 <li class="nav-item">
                     <a (click)="logout()" class="btn btn-warning" role="button">Log out</a>
