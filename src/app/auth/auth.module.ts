@@ -1,3 +1,4 @@
+import { AuthGuard } from './guards/auth.guard';
 import { AuthService } from './auth.service';
 // import { AuthGuard } from './../services/auth/auth-guard.service';
 // import { AuthService } from './../services/auth/auth.service';
@@ -20,7 +21,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
     RegisterComponent,
      LoginComponent
     ],
-  providers: [AngularFireAuth, AuthService],
+  providers: [AngularFireAuth, AuthService, AuthGuard],
   exports: [RegisterComponent, LoginComponent]
 })
 export class AuthModule { }
