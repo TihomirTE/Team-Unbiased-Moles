@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { Alert } from './../../shared/models/alert';
 import { AuthService } from './../auth.service';
 
 
