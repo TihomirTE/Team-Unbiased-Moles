@@ -27,4 +27,8 @@ export class NavComponent implements OnInit {
     console.log('clicked');
   }
 
+  loginUser() {
+    return this.auth.currentUser().email;
+  }
+
 }
