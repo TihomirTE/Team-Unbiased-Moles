@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 export class LoginComponent implements OnInit {
   [x: string]: any;
   email: string;
-  constructor(private AuthService: AuthService) { }
+  constructor(private AuthService: AuthService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -32,6 +32,9 @@ export class LoginComponent implements OnInit {
 
   logoutUser() {
     this.AuthService.logOut();
+  }
+  redirect() {
+    this.router.navigateByUrl('/register');
   }
 
   // loginUser(user) {
