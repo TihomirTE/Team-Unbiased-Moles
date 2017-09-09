@@ -16,16 +16,16 @@
 
 
 
-    <div class="form-group">
+    <div class="form-group" class="destination">
         <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Departure Airport</span>
+            <span class="input-group-addon" id="basic-addon1">Departure</span>
             <input [(ngModel)]="startDestination" type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon1">
 
         </div>
     </div>
-    <div class="form-group">
+    <div class="form-group" class="destination">
         <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Arrival Airport</span>
+            <span class="input-group-addon" id="basic-addon1">Arrival</span>
             <input [(ngModel)]="endDestination" type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon1">
         </div>
     </div>
@@ -38,17 +38,18 @@
         </button>
             </div>
             <div>
-                <button type="button" (click)="Click()">click me</button>
+                <button type="button" class="btn btn-outline-primary" (click)="Click()">Search flights</button>
             </div>
 
         </div>
     </form>
 
     <hr/>
-    <ul>
+    <ul class="list-group">
         <div *ngFor='let post of posts | async'>
-            <li *ngIf='post.endDestination !== false'>
+            <li *ngIf='post.endDestination !== false' class="list-group-item justify-content-between">
                 {{post.startDestination}} {{post.endDestination}} {{post.date}}
+                <a routerLink="/ticket" class="btn btn-secondary">Buy Ticket</a>
             </li>
         </div>
     </ul>
