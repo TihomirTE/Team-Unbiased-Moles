@@ -48,7 +48,7 @@
     <ul>
         <div *ngFor='let post of posts | async'>
             <li *ngIf='post.endDestination !== false'>
-                {{post.startDestination}} {{post.endDestination}} {{post.date}}
+                {{post.startDestination}} {{post.endDestination}} {{post.date}} {{post.time}}
             </li>
         </div>
     </ul>

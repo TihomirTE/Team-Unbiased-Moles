@@ -1,89 +1,262 @@
 {
     "flights": [
         {
-            "startDestination": "Bulgaria",
-            "endDestination": "Britain",
+            "startDestination": "Sofia",
+            "endDestination": "London",
             "date": "08.09.2017",
             "time": "12:30"
         },
         {
-            "startDestination": "Bulgaria",
-            "endDestination": "Britain",
+            "startDestination": "Sofia",
+            "endDestination": "London",
             "date": "08.09.2017",
             "time": "17:30"
         },
         {
-            "startDestination": "Bulgaria",
-            "endDestination": "Britain",
+            "startDestination": "Sofia",
+            "endDestination": "London",
             "date": "08.09.2017",
             "time": "20:30"
 
         },
         {
-            "startDestination": "Britain",
-            "endDestination": "Bulgaria",
+            "startDestination": "Sofia",
+            "endDestination": "London",
+            "date": "09.09.2017",
+            "time": "13:00"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "London",
+            "date": "09.09.2017",
+            "time": "16:00"
+        },
+       {
+            "startDestination": "Sofia",
+            "endDestination": "London",
+            "date": "10.09.2017",
+            "time": "8:30"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "London",
+            "date": "10.09.2017",
+            "time": "10:30"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "London",
+            "date": "10.09.2017",
+            "time": "12:30"
+
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "London",
+            "date": "10.09.2017",
+            "time": "14:30"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "London",
+            "date": "10.09.2017",
+            "time": "16:30"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "London",
+            "date": "10.09.2017",
+            "time": "18:30"
+
+        },
+
+        {
+            "startDestination": "London",
+            "endDestination": "Sofia",
             "date": "08.09.2017",
             "time": "10:30"
         },
         {
-            "startDestination": "Britain",
-            "endDestination": "Bulgaria",
+            "startDestination": "London",
+            "endDestination": "Sofia",
             "date": "08.09.2017",
             "time": "13:00"
         },
         {
-            "startDestination": "Bulgaria",
-            "endDestination": "France",
+            "startDestination": "London",
+            "endDestination": "Sofia",
+            "date": "09.09.2017",
+            "time": "15:30"
+        },
+        {
+            "startDestination": "London",
+            "endDestination": "Sofia",
+            "date": "10.09.2017",
+            "time": "12:00"
+        },
+        {
+            "startDestination": "London",
+            "endDestination": "Sofia",
+            "date": "10.09.2017",
+            "time": "13:00"
+        },
+        {
+            "startDestination": "London",
+            "endDestination": "Sofia",
+            "date": "10.09.2017",
+            "time": "18:30"
+        },
+        
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Paris",
              "date": "08.09.2017",
             "time": "08:00"
         },
         {
-            "startDestination": "Bulgaria",
-            "endDestination": "France",
+            "startDestination": "Sofia",
+            "endDestination": "Paris",
              "date": "08.09.2017",
             "time": "15:00"
         },
         {
-            "startDestination": "Bulgaria",
-            "endDestination": "France",
+            "startDestination": "Sofia",
+            "endDestination": "Paris",
              "date": "08.09.2017",
             "time": "18:00"
         },
         {
-            "startDestination": "France",
-            "endDestination": "Bulgaria",
+            "startDestination": "Sofia",
+            "endDestination": "Paris",
+             "date": "09.09.2017",
+            "time": "08:00"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Paris",
+             "date": "09.09.2017",
+            "time": "15:00"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Paris",
+             "date": "10.09.2017",
+            "time": "17:00"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Paris",
+             "date": "10.09.2017",
+            "time": "22:00"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Paris",
+             "date": "10.09.2017",
+            "time": "23:00"
+        },
+        {
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "08:00"
         },
         {
-            "startDestination": "France",
-            "endDestination": "Bulgaria",
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "09:00"
         },
         {
-            "startDestination": "France",
-            "endDestination": "Bulgaria",
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "14:00"
         },
         {
-            "startDestination": "France",
-            "endDestination": "Bulgaria",
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "20:00"
         },
         {
-            "startDestination": "Bulgaria",
-            "endDestination": "Germany",
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
+             "date": "09.09.2017",
+            "time": "08:00"
+        },
+        {
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
+             "date": "09.09.2017",
+            "time": "12:00"
+        },
+        {
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
+             "date": "09.09.2017",
+            "time": "14:00"
+        },
+        {
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
+             "date": "09.09.2017",
+            "time": "21:00"
+        },
+        {
+            "startDestination": "Paris",
+            "endDestination": "Sofia",
+             "date": "10.09.2017",
+            "time": "15:00"
+        },
+        
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Berlin",
              "date": "08.09.2017",
             "time": "08:00"
         },
         {
-            "startDestination": "Germany",
-            "endDestination": "Bulgaria",
+            "startDestination": "Sofia",
+            "endDestination": "Berlin",
+             "date": "09.09.2017",
+            "time": "08:00"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Berlin",
+             "date": "09.09.2017",
+            "time": "12:00"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Berlin",
+             "date": "10.09.2017",
+            "time": "10:00"
+        },
+        {
+            "startDestination": "Sofia",
+            "endDestination": "Berlin",
+             "date": "10.09.2017",
+            "time": "16:00"
+        },
+        {
+            "startDestination": "Berlin",
+            "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "10:00"
+        },
+        {
+            "startDestination": "Berlin",
+            "endDestination": "Sofia",
+             "date": "09.09.2017",
+            "time": "13:00"
+        },
+        {
+            "startDestination": "Berlin",
+            "endDestination": "Sofia",
+             "date": "10.09.2017",
+            "time": "15:00"
         }
     ]
 }
