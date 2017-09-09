@@ -32,4 +32,8 @@ export class HomeComponent implements OnInit {
     this.to = 'Arrival airport: ' + airport;
     return false;
   }
+
+  getUrlImg() {
+    return 'url(./../../../assets/img/airplane.jpg)';
+  }
 }

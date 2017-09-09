@@ -39,16 +39,17 @@ export class CalendarComponent implements OnInit {
   Click() {
     const transformDate = this.convertToString.transform(this.date);
     this.posts = this.datasrvs.getData(this.startDestination, this.endDestination, transformDate);
-     
+
       // console.log(this.date);
-    
     // console.log(this.startDestination);
     // console.log(this.endDestination);
     // for (var i in this.posts) {
     //       console.log(transformDate);
     //       console.log(this.posts[i].endDestination);
     // }
-    
+  }
 
+  getUrlImg() {
+    return 'url(./../../../../assets/img/ticket.jpg)';
   }
 }

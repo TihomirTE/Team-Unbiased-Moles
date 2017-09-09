@@ -13,9 +13,6 @@
 <pre>Model: {{ model | json }}</pre> -->
 
 <div class="panel panel-default">
-
-
-
     <div class="form-group" class="destination">
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">Departure</span>
@@ -34,8 +31,8 @@
             <div class="input-group">
                 <input [(ngModel)]="date" class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
                 <button class="input-group-addon" (click)="d.toggle()" type="button">
-          <img src="./../../../assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" type="image/svg+xml"/>
-        </button>
+                    <img src="./../../../assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" type="image/svg+xml"/>
+                </button>
             </div>
             <div>
                 <button type="button" class="btn btn-outline-primary" (click)="Click()">Search flights</button>
