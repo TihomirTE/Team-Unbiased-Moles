@@ -1,25 +1,37 @@
 import { Component, Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { Observable } from "rxjs/Observable";
 
 @Injectable()
 export class DataService {
-  items: FirebaseListObservable<any[]>;
+  items: Observable<any[]>;
   constructor(private db: AngularFireDatabase) {
     
   }
   getData(startDestination, endDestination,date)
   {
-   
+   var output = new Observable<any[]>();
     this.items = this.db.list('flights',{
             query: {
                 orderByChild: 'startDestination',
                 equalTo: startDestination,
-                
               }
-        });
-    var array: FirebaseListObservable<any[]>;
+        }).map(x=>x.map(y=>
+          
+          {
+            
+            if(y.endDestination === endDestination) {
+              console.log(y.endDestination);
+            return y;
+          }
+            else {
+              y.endDestination = null;
+              console.log(y.endDestination);
+              return y;
+            }
+          }))
     
-   
+    
     
     return this.items;
   }

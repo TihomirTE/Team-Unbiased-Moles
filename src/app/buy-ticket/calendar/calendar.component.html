@@ -38,17 +38,21 @@
         </button>
         </div>
         <div>
-        <button type="button" (click) = "loger()">click me</button>
+        <button type="button" (click) = "Click()">click me</button>
         </div>
             
         </div>
     </form>
 
     <hr/>
-    <<ul>
-
-        <li *ngFor="let post of posts | async">
-            {{post.startDestination}} {{post.endDestination}} {{post.date}}  
+    <ul>
+        <!--<template *ngFor="let post of posts | async" >
+                    <li ng-if="post.endDestination"> {{post.startDestination}} {{post.endDestination}} {{post.date}}</li>
+        </template>-->
+        <li *ngFor="let post of posts | async" >
+           <div *ngIf="post.endDestination"> 
+               {{post.startDestination}} {{post.endDestination}} {{post.date}} 
+           </div>
         </li>
     </ul>
 </div>

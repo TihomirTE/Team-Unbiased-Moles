@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 import {DataService} from '../../services/data.service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { Observable } from "rxjs/Observable";
 
 const now = new Date();
 
@@ -13,8 +14,8 @@ const now = new Date();
 export class CalendarComponent implements OnInit {
   startDestination: string;
   endDestination: string;
-  posts : FirebaseListObservable<any[]>;
-
+  posts : Observable<any[]>;
+  arr = [];
   constructor(private datasrvs: DataService) { 
     
   }
@@ -34,9 +35,15 @@ export class CalendarComponent implements OnInit {
     
   }
 
-  loger()
+  Click()
   {
      this.posts = this.datasrvs.getData(this.startDestination,this.endDestination,this.date);
+    //  for (var i in this.posts) {
+       
+    //      this.arr.push(this.posts[i]);
+         
+       
+    //  }
     console.log(this.startDestination);
     console.log(this.endDestination);
     console.log(this.date);
