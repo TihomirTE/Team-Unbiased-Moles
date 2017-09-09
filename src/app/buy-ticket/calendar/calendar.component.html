@@ -19,8 +19,8 @@
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">Departure Airport</span>
-            <input [(ngModel)]="startDestination"  type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon1">
-            
+            <input [(ngModel)]="startDestination" type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon1">
+
         </div>
     </div>
     <div class="form-group">
@@ -36,20 +36,20 @@
                 <button class="input-group-addon" (click)="d.toggle()" type="button">
           <img src="./../../../assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" type="image/svg+xml"/>
         </button>
-        </div>
-        <div>
-        <button type="button" (click) = "Click()">click me</button>
-        </div>
-            
+            </div>
+            <div>
+                <button type="button" (click)="Click()">click me</button>
+            </div>
+
         </div>
     </form>
 
     <hr/>
     <ul>
-            <div *ngFor='let post of posts | async'>
+        <div *ngFor='let post of posts | async'>
             <li *ngIf='post.endDestination !== false'>
-               {{post.startDestination}} {{post.endDestination}} {{post.date}} 
+                {{post.startDestination}} {{post.endDestination}} {{post.date}}
             </li>
-            </div>
+        </div>
     </ul>
 </div>
