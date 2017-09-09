@@ -10,6 +10,7 @@ export class DataService {
   }
   getData(startDestination, endDestination,date)
   {
+    
    var output = new Observable<any[]>();
     this.items = this.db.list('flights',{
             query: {
@@ -20,13 +21,11 @@ export class DataService {
           
           {
             
-            if(y.endDestination === endDestination) {
-              console.log(y.endDestination);
+            if((y.endDestination === endDestination) && (y.date === date)){
             return y;
           }
             else {
               y.endDestination = false;
-              console.log(y.endDestination);
               return y;
             }
           }))

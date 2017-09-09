@@ -37,14 +37,18 @@ export class CalendarComponent implements OnInit {
   }
 
   Click() {
-    this.posts = this.datasrvs.getData(this.startDestination, this.endDestination, this.date);
-    //  for (var i in this.posts) {
-      //      this.arr.push(this.posts[i]);
-      //  }
     const transformDate = this.convertToString.transform(this.date);
+    this.posts = this.datasrvs.getData(this.startDestination, this.endDestination, transformDate);
+     
+      // console.log(this.date);
+    
     // console.log(this.startDestination);
     // console.log(this.endDestination);
-    console.log(transformDate);
+    // for (var i in this.posts) {
+    //       console.log(transformDate);
+    //       console.log(this.posts[i].endDestination);
+    // }
+    
 
   }
 }
