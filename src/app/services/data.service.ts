@@ -25,7 +25,7 @@ export class DataService {
             return y;
           }
             else {
-              y.endDestination = null;
+              y.endDestination = false;
               console.log(y.endDestination);
               return y;
             }

@@ -46,13 +46,10 @@
 
     <hr/>
     <ul>
-        <!--<template *ngFor="let post of posts | async" >
-                    <li ng-if="post.endDestination"> {{post.startDestination}} {{post.endDestination}} {{post.date}}</li>
-        </template>-->
-        <li *ngFor="let post of posts | async" >
-           <div *ngIf="post.endDestination"> 
+            <div *ngFor='let post of posts | async'>
+            <li *ngIf='post.endDestination !== false'>
                {{post.startDestination}} {{post.endDestination}} {{post.date}} 
-           </div>
-        </li>
+            </li>
+            </div>
     </ul>
 </div>
