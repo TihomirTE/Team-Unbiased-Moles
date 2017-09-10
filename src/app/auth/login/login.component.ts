@@ -1,8 +1,9 @@
 import { Router } from '@angular/router';
 // import { AuthService } from './../../services/auth/auth.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewContainerRef  } from '@angular/core';
 import { AuthService } from './../auth.service';
 import { NgForm } from '@angular/forms';
+import { ToastsManager, Toast } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,12 @@ import { NgForm } from '@angular/forms';
 export class LoginComponent implements OnInit {
   [x: string]: any;
   email: string;
-  constructor(private AuthService: AuthService, private router: Router) { }
+  constructor(private AuthService: AuthService, private router: Router,
+     private toastr: ToastsManager, private viewContRef: ViewContainerRef) {
+      this.viewContRef = viewContRef;
+      this.toastr.setRootViewContainerRef(viewContRef);
+      }
+
 
   ngOnInit() {
   }
@@ -34,8 +40,19 @@ export class LoginComponent implements OnInit {
     this.AuthService.logOut();
   }
   redirect() {
-    this.router.navigateByUrl('/register');
+    setTimeout(() => {
+      this.router.navigateByUrl('/register');
+    }, 2000);
   }
+
+  public showSuccess() {
+    this.toastr.success('Successful login')
+    .then((toast: Toast) => {
+        setTimeout(() => {
+            this.toastr.dismissToast(toast);
+        }, 1000);
+    });
+}
 
   // loginUser(user) {
    /* return this.authService.loginUser(user)

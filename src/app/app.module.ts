@@ -13,6 +13,8 @@ import { CalendarComponent } from './buy-ticket/calendar/calendar.component';
 import { AboutComponent } from './about/about.component';
 import { BuyTicketModule } from './buy-ticket/buy-ticket.module';
 import { FirebaseModule } from './firebase/firebase.module';
+import { ToastModule } from 'ng2-toastr/ng2-toastr';
+
 
 
 
@@ -32,7 +34,8 @@ import { FirebaseModule } from './firebase/firebase.module';
     NgbModule.forRoot(),
     FormsModule,
     BuyTicketModule,
-    FirebaseModule
+    FirebaseModule,
+    ToastModule.forRoot()
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
