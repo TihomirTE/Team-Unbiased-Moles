@@ -37,7 +37,10 @@ export class CalendarComponent implements OnInit {
   ngOnInit() {
 
   }
-
+  pesho()
+  {
+    console.log("az sam pesho");
+  }
   Click() {
     const convertedStartDestination = this.capitalizeFL.transform(this.startDestination);
     const convertedEndDestination = this.capitalizeFL.transform(this.endDestination);
