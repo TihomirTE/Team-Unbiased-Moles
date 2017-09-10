@@ -35,7 +35,7 @@
                 </button>
             </div>
             <div>
-                <button type="button" class="btn btn-outline-primary"  (click)="Click()">Search flights</button>
+                <button type="button" class="btn btn-outline-primary" (click)="Click()">Search flights</button>
             </div>
 
         </div>
@@ -44,9 +44,9 @@
     <hr/>
     <ul class="list-group">
         <div *ngFor='let post of posts | async'>
-            <li *ngIf='post.endDestination !== false' class="list-group-item justify-content-between">
+            <li appMyHighlight *ngIf='post.endDestination !== false' class="list-group-item justify-content-between">
                 {{post.startDestination}} {{post.endDestination}} {{post.date}} {{post.time}}
-                <a routerLink="/fligth"   (click)="select(post)" class="btn btn-secondary">Buy Ticket</a>
+                <a routerLink="/fligth" (click)="select(post)" class="btn btn-secondary">Buy Ticket</a>
             </li>
         </div>
     </ul>

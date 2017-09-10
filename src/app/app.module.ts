@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Directive } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AuthModule } from './auth/auth.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,7 @@ import { BuyTicketModule } from './buy-ticket/buy-ticket.module';
 import { FirebaseModule } from './firebase/firebase.module';
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
 import { FligthModule } from './fligth/fligth.module';
+import { DirectivesModule } from './directives/directives.module';
 
 
 
@@ -37,7 +38,8 @@ import { FligthModule } from './fligth/fligth.module';
     BuyTicketModule,
     FirebaseModule,
     ToastModule.forRoot(),
-    FligthModule
+    FligthModule,
+    DirectivesModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
