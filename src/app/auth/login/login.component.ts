@@ -19,7 +19,6 @@ export class LoginComponent implements OnInit {
       this.toastr.setRootViewContainerRef(viewContRef);
       }
 
-
   ngOnInit() {
   }
 

@@ -4,6 +4,7 @@ import {DataService} from '../../services/data.service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 import { ConvertToString } from './../../pipes/convert-to-string.pipe';
+import { CapitalizeFirstLetter } from './../../pipes/capitalize-first-letter.pipe';
 
 const now = new Date();
 
@@ -11,14 +12,15 @@ const now = new Date();
   selector: 'app-datepicker',
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.css'],
-  providers: [ConvertToString]
+  providers: [ConvertToString, CapitalizeFirstLetter]
 })
 export class CalendarComponent implements OnInit {
   startDestination: string;
   endDestination: string;
   posts: Observable<any[]>;
   arr = [];
-  constructor(private datasrvs: DataService, private convertToString: ConvertToString) {
+  constructor(private datasrvs: DataService, private convertToString: ConvertToString,
+              private capitalizeFL: CapitalizeFirstLetter) {
 
   }
   model: NgbDateStruct;
@@ -37,8 +39,11 @@ export class CalendarComponent implements OnInit {
   }
 
   Click() {
+    const convertedStartDestination = this.capitalizeFL.transform(this.startDestination);
+    const convertedEndDestination = this.capitalizeFL.transform(this.endDestination);
     const transformDate = this.convertToString.transform(this.date);
-    this.posts = this.datasrvs.getData(this.startDestination, this.endDestination, transformDate);
+
+    this.posts = this.datasrvs.getData(convertedStartDestination, convertedEndDestination, transformDate);
 
       // console.log(this.date);
     // console.log(this.startDestination);
