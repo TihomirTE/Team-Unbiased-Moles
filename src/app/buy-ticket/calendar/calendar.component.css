@@ -5,3 +5,7 @@
 .input-group {
     margin-top: 2%;
 }
+
+.btn-secondary:hover {
+    background: green
+}
