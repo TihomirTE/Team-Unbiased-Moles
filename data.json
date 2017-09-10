@@ -1,18 +1,24 @@
 {
     "flights": [
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "08.09.2017",
             "time": "12:30"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "08.09.2017",
             "time": "17:30"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "08.09.2017",
@@ -20,30 +26,40 @@
 
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "09.09.2017",
             "time": "13:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "09.09.2017",
             "time": "16:00"
         },
        {
+           "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "10.09.2017",
             "time": "8:30"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "10.09.2017",
             "time": "10:30"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "10.09.2017",
@@ -51,18 +67,24 @@
 
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "10.09.2017",
             "time": "14:30"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "10.09.2017",
             "time": "16:30"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "London",
             "date": "10.09.2017",
@@ -71,36 +93,48 @@
         },
 
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "London",
             "endDestination": "Sofia",
             "date": "08.09.2017",
             "time": "10:30"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "London",
             "endDestination": "Sofia",
             "date": "08.09.2017",
             "time": "13:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "London",
             "endDestination": "Sofia",
             "date": "09.09.2017",
             "time": "15:30"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "London",
             "endDestination": "Sofia",
             "date": "10.09.2017",
             "time": "12:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "London",
             "endDestination": "Sofia",
             "date": "10.09.2017",
             "time": "13:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "London",
             "endDestination": "Sofia",
             "date": "10.09.2017",
@@ -108,102 +142,136 @@
         },
         
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Paris",
              "date": "08.09.2017",
             "time": "08:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Paris",
              "date": "08.09.2017",
             "time": "15:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Paris",
              "date": "08.09.2017",
             "time": "18:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Paris",
              "date": "09.09.2017",
             "time": "08:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Paris",
              "date": "09.09.2017",
             "time": "15:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Paris",
              "date": "10.09.2017",
             "time": "17:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Paris",
              "date": "10.09.2017",
             "time": "22:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Paris",
              "date": "10.09.2017",
             "time": "23:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "08:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "09:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "14:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "20:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "09.09.2017",
             "time": "08:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "09.09.2017",
             "time": "12:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "09.09.2017",
             "time": "14:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "09.09.2017",
             "time": "21:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Paris",
             "endDestination": "Sofia",
              "date": "10.09.2017",
@@ -211,48 +279,64 @@
         },
         
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Berlin",
              "date": "08.09.2017",
             "time": "08:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Berlin",
              "date": "09.09.2017",
             "time": "08:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Berlin",
              "date": "09.09.2017",
             "time": "12:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Berlin",
              "date": "10.09.2017",
             "time": "10:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Sofia",
             "endDestination": "Berlin",
              "date": "10.09.2017",
             "time": "16:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Berlin",
             "endDestination": "Sofia",
              "date": "08.09.2017",
             "time": "10:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Berlin",
             "endDestination": "Sofia",
              "date": "09.09.2017",
             "time": "13:00"
         },
         {
+            "clicked": false,
+            "passengers": [],
             "startDestination": "Berlin",
             "endDestination": "Sofia",
              "date": "10.09.2017",
