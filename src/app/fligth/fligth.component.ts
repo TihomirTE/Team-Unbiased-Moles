@@ -21,10 +21,15 @@ ngOnInit() {
   this.post = {startDestination: this.DataService.currentPost.startDestination,
         endDestination: this.DataService.currentPost.endDestination,
         date: this.DataService.currentPost.date,
-        time: this.DataService.currentPost.time
+        time: this.DataService.currentPost.time,
+        passengers: this.DataService.currentPost.passengers
       }
 }
 
+click()
+{
+  this.DataService.buy();
+}
 
   
 }

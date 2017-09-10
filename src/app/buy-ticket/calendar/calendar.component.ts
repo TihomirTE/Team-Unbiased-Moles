@@ -19,7 +19,7 @@ export class CalendarComponent implements OnInit {
   endDestination: string;
   posts: Observable<any[]>;
   arr = [];
-  currentPost = {startDestination: "aa", endDestination: "bb", date: "cc", time: ""};
+  currentPost = {startDestination: "aa", endDestination: "bb", date: "cc", time: "", passengers: 0};
   constructor(private datasrvs: DataService, private convertToString: ConvertToString,
               private capitalizeFL: CapitalizeFirstLetter) {
 
@@ -38,17 +38,15 @@ export class CalendarComponent implements OnInit {
   ngOnInit() {
 
   }
-  uncheck()
-  {
-    this.datasrvs.uncheck();
-  }
+ 
   select(post)
   {
     this.currentPost = {
         startDestination: post.startDestination,
         endDestination: post.endDestination,
         date: post.date,
-        time: post.time
+        time: post.time,
+        passengers: post.passengers
       }
       this.datasrvs.currentPost = this.currentPost;
   }
