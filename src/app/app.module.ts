@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { BuyTicketModule } from './buy-ticket/buy-ticket.module';
 import { FirebaseModule } from './firebase/firebase.module';
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
+import { FligthModule } from './fligth/fligth.module';
 
 
 
@@ -35,7 +36,8 @@ import { ToastModule } from 'ng2-toastr/ng2-toastr';
     FormsModule,
     BuyTicketModule,
     FirebaseModule,
-    ToastModule.forRoot()
+    ToastModule.forRoot(),
+    FligthModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

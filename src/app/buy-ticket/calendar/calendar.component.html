@@ -46,7 +46,7 @@
         <div *ngFor='let post of posts | async'>
             <li *ngIf='post.endDestination !== false' class="list-group-item justify-content-between">
                 {{post.startDestination}} {{post.endDestination}} {{post.date}}
-                <a routerLink="/ticket" class="btn btn-secondary">Buy Ticket</a>
+                <a routerLink="/fligth" class="btn btn-secondary">Buy Ticket</a>
             </li>
         </div>
     </ul>

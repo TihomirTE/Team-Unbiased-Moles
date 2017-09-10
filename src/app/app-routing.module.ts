@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CalendarComponent } from './buy-ticket/calendar/calendar.component';
+import { FligthComponent } from './fligth/fligth.component';
 
 import { AboutComponent } from './about/about.component';
 
@@ -17,7 +18,8 @@ const routes: Routes = [
     { path: 'buyTicket', component: CalendarComponent, canActivate: [AuthGuard] },
     { path: 'about', component: AboutComponent },
     {path: 'login', component: LoginComponent},
-    {path: 'register', component: RegisterComponent}
+    {path: 'register', component: RegisterComponent},
+    {path: 'fligth', component: FligthComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({
