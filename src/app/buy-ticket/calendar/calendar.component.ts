@@ -19,6 +19,7 @@ export class CalendarComponent implements OnInit {
   endDestination: string;
   posts: Observable<any[]>;
   arr = [];
+  currentPost = {startDestination: "aa", endDestination: "bb", date: "cc", time: ""};
   constructor(private datasrvs: DataService, private convertToString: ConvertToString,
               private capitalizeFL: CapitalizeFirstLetter) {
 
@@ -37,15 +38,26 @@ export class CalendarComponent implements OnInit {
   ngOnInit() {
 
   }
-  pesho()
+  uncheck()
   {
-    console.log("az sam pesho");
+    this.datasrvs.uncheck();
   }
+  select(post)
+  {
+    this.currentPost = {
+        startDestination: post.startDestination,
+        endDestination: post.endDestination,
+        date: post.date,
+        time: post.time
+      }
+      this.datasrvs.currentPost = this.currentPost;
+  }
+
   Click() {
+    
     const convertedStartDestination = this.capitalizeFL.transform(this.startDestination);
     const convertedEndDestination = this.capitalizeFL.transform(this.endDestination);
     const transformDate = this.convertToString.transform(this.date);
-
     this.posts = this.datasrvs.getData(convertedStartDestination, convertedEndDestination, transformDate);
 
       // console.log(this.date);
@@ -55,6 +67,7 @@ export class CalendarComponent implements OnInit {
     //       console.log(transformDate);
     //       console.log(this.posts[i].endDestination);
     // }
+    
   }
 
   getUrlImg() {
