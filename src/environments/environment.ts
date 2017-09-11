@@ -6,11 +6,11 @@
 export const environment = {
   production: false,
   firebase: {
-     apiKey: 'AIzaSyChQk3n3ihz1vc3dHCbqW25p8WQhDk7R1g',
-    authDomain: 'mladost-air.firebaseapp.com',
-    databaseURL: 'https://mladost-air.firebaseio.com',
-    projectId: 'mladost-air',
-    storageBucket: 'mladost-air.appspot.com',
-    messagingSenderId: '625628234055'
+    apiKey: 'AIzaSyCEWgkTBYTi4HroPNxPejVyJNo02OnmnQA',
+    authDomain: 'mladost-air-project.firebaseapp.com',
+    databaseURL: 'https://mladost-air-project.firebaseio.com',
+    projectId: 'mladost-air-project',
+    storageBucket: 'mladost-air-project.appspot.com',
+    messagingSenderId: '657040601777'
   }
 };
